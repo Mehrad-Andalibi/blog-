@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Multipage Blog Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="form__section">
+    <div class="container form__section-container">
+        <h2>Sign Up</h2>
+        <div class="alert__message error">
+            <p>This is an error message</p>
+        </div>
+        <form onsubmit="return validate()" onreset="resetValidation()" enctype="multipart/form-data">
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="text" id="login" placeholder="User Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="pass" placeholder="Create Password">
+            <input type="password" id="pass2" placeholder="Confirm Password">
+            <div class="form__control">
+                <label for="avatar">User Profile picture</label>
+                <input type="file" id="avatar">
+            </div>
+            <div class="form__control inline">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+            <button type="reset" class="btn">Reset</button>
+            <small>Already have an account? <a href="signin.html">Sign In</a></small>
+        </form>
+    </div>
+</section>
+
+<script src="./main.js"></script>
+</body>
+</html>
